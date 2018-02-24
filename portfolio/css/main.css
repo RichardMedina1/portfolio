@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+body{
+	background: #1A1F2B;
+}
+
+header{
+	padding:20px 15px;
+}
+
+#logo{
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	background-color: #30395C;
+	display: inline-block;
+}
+#top-nav{
+	float: right;
+	display: inline-block;
+
+}
+
+#top-nav a{
+	display: inline-block;
+	font-family: sans-serif;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 15px;
+}
+
+#top-nav a:hover{
+	color: #85A5CC;
+	text-decoration: none;
+	padding: 0 15px;
+}
+
+.jumbo{
+	padding:200px 0;
+}
+
+.jumbo h1{
+	font-family: 'Berkshire Swash', cursive;
+	color: #fff;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 280px;
+}
+
+.work{
+	padding: 40px 100px;
+	text-align: center;
+}
+
+.work .box{
+	display: inline-block;
+	background: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+
+
+}
