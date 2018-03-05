@@ -1,2 +1,2 @@
-# portfolio
-portfolio for Richard Medina Jr Devoloper
+# Portfolio
+Portfolio for Richard Medina 
