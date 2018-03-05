@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 
 body{
-	background: #1A1F2B;
+	background: ##ffccff;
 }
 
 header{
-	padding:20px 15px;
+	background: #35424A;
+	padding:30px 15px;
+	padding-right: 20px;
+	min-height: 70px;
+	border-bottom: #00F 1px solid;
+
+}
+/* Global */
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
 }
 
 #logo{
@@ -17,8 +28,10 @@ header{
 }
 #top-nav{
 	float: right;
-	display: inline-block;
-
+	display: flex;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size: 16px;
 }
 
 #top-nav a{
@@ -35,29 +48,84 @@ header{
 	padding: 0 15px;
 }
 
-.jumbo{
-	padding:200px 0;
+#showcase{
+	padding: 0px 200px;
+	background-image:url('https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1441013880000/photosp/03a0ea0c-93e0-4081-bee0-9a81de15fba2/03a0ea0c-93e0-4081-bee0-9a81de15fba2.jpg');
+	background-size: cover;
+	background-position: justify;
+	background-repeat: none;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 0 20px;
+
 }
 
-.jumbo h1{
+
+
+#showcase h1, p{
 	font-family: 'Berkshire Swash', cursive;
-	color: #fff;
-	text-align: center;
-	font-size: 60px;
-	font-weight: 280px;
+	color: #00F;
+
+	
+	display: flex;
+	font-size: 20px;
+	font-weight: 200px;
+	
+	
+	
+}
+#showcase h1{
+	text-align: left;
 }
 
 .work{
-	padding: 40px 100px;
+	background-color: #ffccff;
+	padding: 60px 100px;
 	text-align: center;
 }
 
 .work .box{
 	display: inline-block;
 	background: #fff;
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 	margin: 20px;
-
-
+	overflow: hidden;
+	cursor: pointer;
 }
+
+
+.work .box .hoverBox{
+	background: rgba(48, 57, 92, .9);
+	position: relative;
+	left: -100%;
+	height: 100%;
+	position: 100%;
+	transition: all .4s ease;
+	padding: 35px 15px;
+	opacity: 0;
+}
+
+.work .box:hover .hoverBox{
+	left: 0;
+	opacity: 1;
+}
+.work .box .hoverBox h3{
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: underline;
+	font-family: 'Berkshire Swash', cursive;
+}
+
+.work .box .hoverBox h5{
+	color: white;
+	font-size: 18px;
+	font-family: 'Berkshire Swash', cursive;
+	
+}
+
